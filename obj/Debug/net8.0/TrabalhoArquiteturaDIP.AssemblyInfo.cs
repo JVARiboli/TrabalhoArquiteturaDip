@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrabalhoArquiteturaDIP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4807af6c4f9e2cc39611e17ea25b9942378ad72d")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrabalhoArquiteturaDIP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrabalhoArquiteturaDIP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

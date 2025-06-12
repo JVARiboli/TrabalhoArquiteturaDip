@@ -1,32 +1,23 @@
-﻿enum State { On, Off }
-
-class Lamp
+﻿namespace TrabalhoArquiteturaDIP
 {
-    State State;
-
-    public Lamp(State State)
+    class Program
     {
-        this.State = State;
-    }
+        static void Main(string[] args)
+        {
+            var lamp = new Lamp();
+            var lightSwitch = new Switch();
 
-    public void Operate()
-    {
-        State = State == State.On ? State.Off : State.On;
-        Console.WriteLine("Luz " + (State == State.On ? "Ligada" : "Desligada"));
-    }
-}
+            lightSwitch.SetDevice(lamp);
 
-class Switch
-{
-    private Lamp lamp;
+            Console.WriteLine("Pressione Enter para alternar a lâmpada.");
 
-    public Switch(Lamp device)
-    {
-        this.lamp = device;
-    }
+            while (true)
+            {
+                ConsoleKeyInfo keyInfo = Console.ReadKey();
 
-    public void Press()
-    {
-        lamp.Operate();
+                if (keyInfo.Key == ConsoleKey.Enter)
+                    lightSwitch.Press();
+            }
+        }
     }
 }
